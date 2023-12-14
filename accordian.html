@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .row{
+            background-color: rgba(228, 156, 156, 0.783);
+        }
+        .accordion-item {
+            width: 100%;
+            padding: 40px;
+        }
+
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .accordion-header i {
+            transition: transform 0.5s;
+        }
+
+      .accordion-content {
+    display: none;
+    
+}
+
+        .edit-buttons {
+            display: flex;
+            gap: 10px;
+         
+        }
+
+        .edit-buttons button {
+            cursor: pointer;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-12">
+        <h1 align="center" style="color: rgb(0, 0, 98); margin: 30px;">FAQs</h1>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h1 id="q1"
+                    style="color: rgb(0, 0, 98); padding: 20px; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">
+                    What is Lorem Ipsum  Sed do eiusmod  Sedsmod?</h1>
+                <div class="edit-buttons">
+                    <button class="btn btn-primary" onclick="editTitle('q1')">Edit Title</button>
+                </div>
+                <i class="fas fa-chevron-down fa-3x" style="justify-content: end;"></i>
+            </div>
+            <div class="accordion-content" id="a1">
+                <p style="font-size: 25px; color: rgb(149, 149, 149);">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized
+                    in the 1960s with the release.
+                </p>
+                <div class="edit-buttons">
+                    <button  class="btn btn-primary" onclick="editContent('a1')">Edit Description</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h1 id="q1"
+                    style="color: rgb(0, 0, 98); padding: 20px; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">
+                    Lorem ipsum dolor sit amet, consectetur adipisci</h1>
+                <div class="edit-buttons">
+                    <button  class="btn btn-primary" onclick="editTitle('q1')">Edit Title</button>
+                </div>
+                <i class="fas fa-chevron-down fa-3x" style="justify-content: end;"></i>
+            </div>
+            <div class="accordion-content" id="a1">
+                <p style="font-size: 25px; color: rgb(149, 149, 149);">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized
+                    in the 1960s with the release.
+                </p>
+                <div class="edit-buttons">
+                    <button  class="btn btn-primary" onclick="editContent('a1')">Edit Description</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h1 id="q1"
+                    style="color: rgb(0, 0, 98); padding: 20px; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">
+                    Sed do eiusmod tempor incididunt ut labore elit?</h1>
+                <div class="edit-buttons">
+                    <button  class="btn btn-primary" onclick="editTitle('q1')">Edit Title</button>
+                </div>
+                <i class="fas fa-chevron-down fa-3x" style="justify-content: end;"></i>
+            </div>
+            <div class="accordion-content" id="a1">
+                <p style="font-size: 25px; color: rgb(149, 149, 149);">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized
+                    in the 1960s with the release.
+                </p>
+                <div class="edit-buttons">
+                    <button  class="btn btn-primary" onclick="editContent('a1')">Edit Description</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h1 id="q1"
+                    style="color: rgb(0, 0, 98); padding: 20px; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">
+                    Vivamus at augue eget arcu dictum vari Congue ?</h1>
+                <div class="edit-buttons">
+                    <button  class="btn btn-primary" onclick="editTitle('q1')">Edit Title</button>
+                </div>
+                <i class="fas fa-chevron-down fa-3x" style="justify-content: end;"></i>
+            </div>
+            <div class="accordion-content" id="a1">
+                <p style="font-size: 25px; color: rgb(149, 149, 149);">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized
+                    in the 1960s with the release.
+                </p>
+                <div class="edit-buttons">
+                    <button  class="btn btn-primary" onclick="editContent('a1')">Edit Description</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $(".accordion-header").click(function () {
+            var content = $(this).next(".accordion-content");
+            var icon = $(this).find("i");
+
+            content.slideToggle(1000);
+            icon.toggleClass("fa-chevron-down fa-chevron-up");
+        });
+    });
+
+    function editTitle(questionId) {
+        var newTitle = prompt("Enter new title:");
+        if (newTitle !== null) {
+            $("#" + questionId).text(newTitle);
+        }
+    }
+
+    function editContent(answerId) {
+        var newContent = prompt("Enter new description:");
+        if (newContent !== null) {
+            $("#" + answerId).html("<p style='font-size: 25px; color: rgb(149, 149, 149);'>" + newContent + "</p>");
+        }
+    }
+</script>
+</html>
